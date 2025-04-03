@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ddd;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0 0 0.5em 0;
+}
+
+header ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#os-container {
+    width: 640px;
+    height: 480px;
+    border: 2px solid #333;
+    background-color: #000; /* Typical terminal background */
+    color: #0f0; /* Typical terminal text */
+    overflow: hidden; /* Hide overflow for now */
+    position: relative; /* Needed for potential absolute positioning inside */
+    font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+    display: flex; /* Using flex to potentially center content later */
+    justify-content: center;
+    align-items: center;
+}
+
+#templeos-screen {
+     width: 100%;
+     height: 100%;
+     overflow: auto; /* Allow scrolling if content exceeds */
+     padding: 10px;
+     box-sizing: border-box;
+}
+
+#startos-code {
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word; /* Break words if necessary */
+    font-size: 0.8em; /* Slightly smaller font */
+}
+
+
+footer {
+    background-color: #eee;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+}
+
+#debug-console h2 {
+    margin-top: 0;
+}
+
+#debug-input {
+    width: calc(100% - 22px); /* Account for padding/border */
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#debug-submit {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#debug-output {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 50px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: monospace;
+}
+
